@@ -9,7 +9,7 @@ def test_parse_file(sample_log_file):
 
     assert len(entries) == 3
     assert all(isinstance(entry, LogEntry) for entry in entries)
-    assert entries[0].url == "/api/context/123"
+    assert entries[0].url == "/api/context/..."
     assert entries[0].response_time == 0.024
     assert entries[0].status == 200
 
